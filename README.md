@@ -1,4 +1,4 @@
-# Boris-bike-3
+# Boris Bikes
 
 This repo contains a network of docking stations and bikes that anyone can use. The program will emulate all the docking stations, bikes, and infrastructure (repair staff, and so on) required to make the bike network in London work.
 
