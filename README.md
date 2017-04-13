@@ -1,27 +1,24 @@
-<!-- name of the projects and all sub-modules and  -->
+# Boris-bike-3
 
-Boris Bikes application for the management of the public cycle network in London
+This repo contains a network of docking stations and bikes that anyone can use. The program will emulate all the docking stations, bikes, and infrastructure (repair staff, and so on) required to make the bike network in London work.
 
-<!-- libraries (sometimes they are named different and very confusing to new users)descriptions of all the project, and all sub-modules and libraries
+## Getting started
 
-5-line code snippet on how its used (if it's a library)
+`git clone https://github.com/pmuldoon86/boris-bikes`
 
-copyright and licensing information (or "Read LICENSE")
+Ruby installation page: https://www.ruby-lang.org/en/documentation/installation/
 
-instruction to grab the documentation
+`gem install rspec`
 
-instructions to install, configure, and to run the programs
+`bundle install`
 
-instruction to grab the latest code and detailed
+## Usage
 
-instructions to build it (or quick overview and "Read INSTALL")
 
-list of authors or "Read AUTHORS"
 
-instructions to submit bugs, feature requests, submit patches, join mailing list, get announcements, or join the user or dev community in other forms
 
-other contact info (email address, website, company name, address, etc)
+## Running tests
 
-a brief history if it's a replacement or a fork of something else
+Run unit tests from the project folder URL via `rspec`
 
-legal notices (crypto stuff) -->
+Run feature tests by running irb within the project folder `require spec-file-name`
