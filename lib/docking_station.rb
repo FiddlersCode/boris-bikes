@@ -1,4 +1,4 @@
-require_relative 'bike'
+require_relative   'bike'
 
 class DockingStation
   attr_reader :capacity
@@ -22,7 +22,9 @@ class DockingStation
      @bikes.pop
   end
 
-
+  def report_broken
+    true
+  end
 
 private
   attr_accessor :bikes
