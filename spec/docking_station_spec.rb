@@ -53,4 +53,8 @@ describe DockingStation do
     end
   end
 
+  describe '#report_broken' do
+    it {is_expected.to respond_to :report_broken}
+  end
+
 end

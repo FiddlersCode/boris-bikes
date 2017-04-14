@@ -22,6 +22,9 @@ class DockingStation
      @bikes.pop
   end
 
+  def report_broken
+  end
+
 private
   attr_accessor :bikes
 
