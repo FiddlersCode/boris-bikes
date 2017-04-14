@@ -5,20 +5,21 @@ class DockingStation
 
   DEFAULT_CAPACITY = 20
 
-  def initialize
+  def initialize(capacity = DEFAULT_CAPACITY)
+     @capacity = capacity
      @bikes = []
-     @capacity = DEFAULT_CAPACITY
-  end
 
-  def release_bike
-    fail 'No bikes available' if empty?
-     @bikes.pop
   end
 
   def dock(bike)
     fail 'Docking station full' if full?
      @bikes << bike
      bike
+  end
+
+  def release_bike
+    fail 'No bikes available' if empty?
+     @bikes.pop
   end
 
 private
