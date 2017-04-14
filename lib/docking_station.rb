@@ -1,23 +1,23 @@
-require 'bike'
+require_relative   'bike'
 
 class DockingStation
-  attr_accessor :bike
+  attr_accessor :bikes
 
   # def bike
-  #   @bike
+  #   @bikes
   # end
-  # def initialize
-  #    @bike = Bike.new
-  #    release_bike
-  # end
+  def initialize
+     @bikes = []
+  end
 
   def release_bike
-    fail 'No bikes available' unless @bike
-     @bike
+    fail 'No bikes available' unless @bikes
+     @bikes.pop
   end
 
   def dock(bike)
-    fail 'Docking station full' if @bike
-     @bike = bike
+    fail 'Docking station full' if @bikes.count >= 20
+     @bikes << bike
+     bike
   end
 end
