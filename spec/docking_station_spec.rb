@@ -28,7 +28,8 @@ describe DockingStation do
   bike = Bike.new
 
     it { is_expected.to respond_to(:dock).with(1).argument }
-    it { is_expected.to respond_to(:bikes) }
+  #  it { is_expected.to respond_to(:bikes) }
+  # don't normally test private methods
     it 'docks something' do
       expect(subject.dock(bike)).to eq bike
     end
