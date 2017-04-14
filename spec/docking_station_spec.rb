@@ -1,7 +1,11 @@
 require 'docking_station'
 
 describe DockingStation do
-
+  describe '#capacity' do
+    it 'has a default capacity' do
+      expect(subject.capacity).to eq DockingStation::DEFAULT_CAPACITY
+    end
+  end
 
   describe '#release_bike' do
     bike = Bike.new
